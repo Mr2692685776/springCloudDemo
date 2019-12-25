@@ -1,0 +1,18 @@
+server:
+  port: 9020
+spring:
+  application:
+    name: api-gateway
+
+#指定Eureka注册地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+#    SERVICE-PRODUCT: /apigateway/**
+#    不能大写
+    feign-order: /order/**
+#  #统一入口为上面的配置，其他入口忽略
+#  ignored-patterns: /*-service/**
