@@ -3,6 +3,12 @@ server:
 spring:
   application:
     name: SERVICE-PRODUCT
+#全部追踪1
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://localhost:9411/
 
 eureka:
   client:

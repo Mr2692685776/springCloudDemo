@@ -13,6 +13,6 @@ zuul:
   routes:
 #    SERVICE-PRODUCT: /apigateway/**
 #    不能大写
-    feign-order: /order/**
+    feign-order: /orderapi/**
 #  #统一入口为上面的配置，其他入口忽略
 #  ignored-patterns: /*-service/**
